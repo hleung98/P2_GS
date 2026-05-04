@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中國歷史時間線</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#1D9E75;--tl:#C8F0E2;--td:#0A4F3A;--purple:#7F77DD;--pl:#EEEDFE;--pd:#3C3489;--coral:#D85A30;--cl:#FAECE7;--cd:#712B13;--blue:#378ADD;--bl:#DAEEFF;--bd:#0C447C;--green:#639922;--gl:#EAF3DE;--gd:#27500A;--ink:#1a1a2e;--paper:#FFFCF5;--p2:#FFF5E0;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;}
+header{text-align:center;padding:2.5rem 1rem 1.5rem;}
+.badge{display:inline-block;background:var(--coral);color:#fff;font-size:11px;font-weight:700;letter-spacing:3px;padding:4px 16px;border-radius:2px;margin-bottom:.8rem;}
+h1{font-family:'Noto Serif TC',serif;font-size:clamp(1.9rem,6vw,3.2rem);font-weight:900;line-height:1.1;margin-bottom:.5rem;}
+h1 em{color:var(--coral);font-style:normal;}
+header p{font-size:14px;color:#777;max-width:460px;margin:0 auto 1rem;line-height:1.7;}
+.hint{font-size:12px;color:#bbb;animation:bob 2s infinite;}
+@keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(7px);}}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem 4rem;}
+.tabs{display:flex;border:2px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:5px 5px 0 var(--ink);margin-bottom:1.4rem;}
+.tab{flex:1;padding:9px 3px;border:none;background:#fff;cursor:pointer;font-family:'Noto Sans TC',sans-serif;font-size:11px;font-weight:700;color:#888;border-right:1px solid #eee;line-height:1.4;text-align:center;transition:all .18s;}
+.tab:last-child{border-right:none;}
+.tab small{display:block;font-weight:400;opacity:.7;font-size:9px;margin-top:1px;}
+.t0.on{background:var(--teal);color:#fff;}.t1.on{background:var(--purple);color:#fff;}.t2.on{background:var(--coral);color:#fff;}.t3.on{background:var(--blue);color:#fff;}.t4.on{background:var(--green);color:#fff;}
+.prog{height:5px;border-radius:3px;background:#e8e0d0;margin-bottom:1.6rem;overflow:hidden;}
+.pf{height:100%;border-radius:3px;transition:width .4s,background .4s;}
+.card{display:none;animation:up .3s ease both;}.card.on{display:block;}
+@keyframes up{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+.box{background:#fff;border:2px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--ink);overflow:hidden;}
+.hero{display:flex;align-items:flex-start;gap:1.1rem;padding:1.4rem 1.6rem;border-bottom:2px solid #f0e8d5;}
+.hico{width:60px;height:60px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:30px;flex-shrink:0;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);}
+.chapter{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.htitle{font-family:'Noto Serif TC',serif;font-size:clamp(1.15rem,4vw,1.7rem);font-weight:900;line-height:1.2;margin-bottom:3px;}
+.htime{font-size:12px;color:#999;}
+.imgs{display:grid;gap:8px;padding:1.2rem 1.6rem 0;}
+.imgs.g2{grid-template-columns:1fr 1fr;}.imgs.g3{grid-template-columns:1fr 1fr 1fr;}
+.icard{border-radius:10px;border:1.5px solid var(--ink);box-shadow:2px 2px 0 var(--ink);overflow:hidden;background:#f8f4ec;}
+.icard svg{width:100%;display:block;}
+.icap{font-size:10px;font-weight:700;color:#fff;background:rgba(0,0,0,.55);padding:4px 7px;line-height:1.3;text-align:center;}
+.body{padding:1.1rem 1.6rem 1.3rem;}
+.sl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#bbb;margin-bottom:7px;margin-top:1rem;}.sl:first-child{margin-top:0;}
+.chips{display:flex;flex-wrap:wrap;gap:6px;}
+.chip{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:20px;font-size:12px;font-weight:700;border:1.5px solid var(--ink);background:var(--p2);}
+.dot{width:7px;height:7px;border-radius:50%;}
+.facts{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.fi{display:flex;align-items:flex-start;gap:8px;font-size:14px;line-height:1.65;}
+.fn{width:21px;height:21px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:3px;border:1.5px solid;}
+.invs{display:flex;gap:7px;flex-wrap:wrap;}
+.inv{padding:6px 13px;border-radius:8px;font-size:12px;font-weight:700;border:1.5px solid;}
+.callout{border-radius:10px;padding:11px 14px;font-size:13px;line-height:1.65;margin-top:1rem;border-left:4px solid;}
+.think{background:var(--p2);border:2px dashed;border-radius:12px;padding:12px 15px;margin-top:1rem;font-size:13px;line-height:1.65;}
+.thtitle{font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.icell{padding:10px 12px;border-radius:8px;font-size:12px;line-height:1.5;border:1px solid;}
+.icell strong{font-weight:700;display:block;margin-bottom:2px;font-size:13px;}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.6rem;border-top:2px solid #f0e8d5;}
+.nb{display:flex;align-items:center;gap:6px;padding:9px 17px;border:2px solid var(--ink);border-radius:9px;background:#fff;font-family:'Noto Sans TC',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .13s;color:var(--ink);box-shadow:3px 3px 0 var(--ink);}
+.nb:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink);}
+.nb:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--ink);}
+.nb.p{background:var(--ink);color:#fff;}
+.nb:disabled{opacity:.3;pointer-events:none;}
+.pgind{font-size:12px;color:#aaa;}
+footer{text-align:center;padding:2rem 1rem;font-size:11px;color:#ccc;}
+/* HINT styles */
+.hints{margin-top:1rem;display:flex;flex-direction:column;gap:8px;}
+.hint-box{border-radius:10px;border:1.5px solid #e8a0a0;overflow:hidden;}
+.hint-toggle{width:100%;display:flex;align-items:center;gap:8px;padding:9px 13px;background:#fff5f5;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:#c0392b;text-align:left;}
+.hint-toggle .htag{font-size:10px;font-weight:700;letter-spacing:1px;background:#e8a0a0;color:#fff;padding:2px 8px;border-radius:10px;flex-shrink:0;}
+.hint-toggle .harrow{margin-left:auto;font-size:12px;transition:transform .25s;color:#c0392b;}
+.hint-toggle.open .harrow{transform:rotate(180deg);}
+.hint-content{display:none;padding:10px 14px;font-size:13px;line-height:1.75;color:#c0392b;background:#fff8f8;border-top:1px solid #f5c0c0;}
+.hint-content.open{display:block;}
+@media(max-width:580px){.hero{flex-direction:column;gap:.8rem;padding:1rem 1.1rem;}.body{padding:1rem 1.1rem;}.nav{padding:.9rem 1.1rem;}.imgs{padding:1rem 1.1rem 0;}.imgs.g3{grid-template-columns:1fr 1fr;}.igrid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">小學常識科 · 單元一</div>
+  <h1>中國<em>歷史</em>時間線</h1>
+  <p>點擊不同時期，認識中國從古到今的重要歷史人物和事件</p>
+  <div class="hint">▼ 向下探索</div>
+</header>
+<div class="wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab t0" onclick="show(0)">遠古先民<small>50萬年前</small></button>
+    <button class="tab t1" onclick="show(1)">炎黃時代<small>約5千年前</small></button>
+    <button class="tab t2" onclick="show(2)">夏朝<small>約4千年前</small></button>
+    <button class="tab t3" onclick="show(3)">秦朝<small>約2千年前</small></button>
+    <button class="tab t4" onclick="show(4)">現代中國<small>1912年至今</small></button>
+  </div>
+  <div class="prog"><div class="pf" id="pf"></div></div>
+
+<!-- CARD 0: 遠古先民 -->
+<div class="card" id="c0"><div class="box">
+  <div class="hero">
+    <div class="hico" style="background:var(--tl)">🏕️</div>
+    <div><div class="chapter" style="color:var(--teal)">第一章</div><div class="htitle">中國先民的故事</div><div class="htime">約50萬年前 — 遠古時代</div></div>
+  </div>
+  <div class="imgs g3">
+    <div class="icard">
+      <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="140" fill="#7a5c28"/>
+        <ellipse cx="100" cy="75" rx="75" ry="65" fill="#3d2b0a"/>
+        <ellipse cx="100" cy="80" rx="62" ry="55" fill="#87CEEB"/>
+        <rect x="38" y="108" width="124" height="32" fill="#5a8a3c"/>
+        <ellipse cx="100" cy="112" rx="12" ry="6" fill="#cc5500"/>
+        <polygon points="100,82 91,112 109,112" fill="#ff6600"/>
+        <polygon points="100,88 94,112 106,112" fill="#ffcc00"/>
+        <circle cx="73" cy="97" r="8" fill="#C9956B"/>
+        <rect x="69" y="105" width="8" height="14" fill="#7a4020" rx="2"/>
+        <circle cx="127" cy="97" r="8" fill="#C9956B"/>
+        <rect x="123" y="105" width="8" height="14" fill="#7a4020" rx="2"/>
+        <path d="M62,78 Q68,73 74,76 Q68,80 62,78Z" fill="#4a7a30"/>
+        <ellipse cx="68" cy="76" rx="5" ry="3" fill="none" stroke="#4a7a30" stroke-width="1"/>
+        <line x1="65" y1="70" x2="62" y2="78" stroke="#4a7a30" stroke-width="1.5"/>
+        <line x1="71" y1="70" x2="74" y2="78" stroke="#4a7a30" stroke-width="1.5"/>
+      </svg>
+      <div class="icap">🏕️ 先民在洞穴生活</div>
+    </div>
+    <div class="icard">
+      <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="140" fill="#87CEEB"/>
+        <rect x="0" y="100" width="200" height="40" fill="#5a8a3c"/>
+        <rect x="0" y="100" width="200" height="8" fill="#7ab84e"/>
+        <rect x="15" y="65" width="7" height="40" fill="#5D4037"/>
+        <circle cx="18" cy="58" r="20" fill="#2e7d32"/>
+        <rect x="158" y="70" width="6" height="36" fill="#5D4037"/>
+        <circle cx="161" cy="64" r="17" fill="#388e3c"/>
+        <ellipse cx="120" cy="96" rx="22" ry="13" fill="#D2691E"/>
+        <circle cx="139" cy="88" r="9" fill="#D2691E"/>
+        <rect x="114" y="105" width="5" height="14" fill="#D2691E"/>
+        <rect x="122" y="105" width="5" height="14" fill="#D2691E"/>
+        <line x1="135" y1="80" x2="128" y2="70" stroke="#8B4513" stroke-width="2"/>
+        <line x1="139" y1="79" x2="145" y2="70" stroke="#8B4513" stroke-width="2"/>
+        <circle cx="63" cy="88" r="9" fill="#C9956B"/>
+        <rect x="59" y="97" width="8" height="15" fill="#795548" rx="2"/>
+        <line x1="72" y1="93" x2="112" y2="90" stroke="#8B4513" stroke-width="2.5"/>
+        <polygon points="112,87 118,90 112,93" fill="#666"/>
+        <line x1="72" y1="92" x2="80" y2="89" stroke="#C9956B" stroke-width="3"/>
+        <rect x="0" y="116" width="200" height="10" fill="rgba(100,180,240,0.5)"/>
+        <ellipse cx="45" cy="122" rx="9" ry="4" fill="#4aaa"/>
+        <polygon points="54,122 60,118 60,126" fill="#4aaa"/>
+      </svg>
+      <div class="icap">🏹 打獵和捕魚</div>
+    </div>
+    <div class="icard">
+      <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="140" fill="#F5E6C8"/>
+        <rect x="28" y="42" width="11" height="62" fill="#8B7355" rx="3"/>
+        <polygon points="39,47 66,58 66,80 39,92" fill="#999"/>
+        <rect x="88" y="52" width="9" height="50" fill="#8B7355" rx="2"/>
+        <polygon points="97,55 121,63 97,97" fill="#bbb"/>
+        <ellipse cx="155" cy="115" rx="24" ry="9" fill="#C07050"/>
+        <path d="M131,115 Q131,72 155,67 Q179,72 179,115" fill="#C07050"/>
+        <ellipse cx="155" cy="67" rx="11" ry="4.5" fill="#C07050"/>
+        <path d="M137,93 Q155,87 173,93" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+        <path d="M135,104 Q155,98 175,104" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+        <line x1="52" y1="18" x2="73" y2="50" stroke="#8B4513" stroke-width="3" stroke-linecap="round"/>
+        <line x1="73" y1="18" x2="52" y2="50" stroke="#8B4513" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="62" cy="52" r="5" fill="#ff7700" opacity=".85"/>
+        <text x="100" y="135" font-size="9" fill="#8B4513" font-family="sans-serif" text-anchor="middle">石器 · 陶器 · 鑽木取火</text>
+      </svg>
+      <div class="icap">🪨 石器工具和陶器</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="sl">遠古先民的生活</div>
+    <ul class="facts">
+      <li class="fi"><span class="fn" style="background:var(--tl);color:var(--td);border-color:var(--teal)">1</span>先民住在山洞裏，用樹葉和獸皮來遮身保暖</li>
+      <li class="fi"><span class="fn" style="background:var(--tl);color:var(--td);border-color:var(--teal)">2</span>靠打獵、捕魚和採集野果來獲取食物</li>
+      <li class="fi"><span class="fn" style="background:var(--tl);color:var(--td);border-color:var(--teal)">3</span>慢慢學會了耕種和飼養動物，過着自給自足的生活</li>
+      <li class="fi"><span class="fn" style="background:var(--tl);color:var(--td);border-color:var(--teal)">4</span>用石頭和木頭製作工具，又學會用火煮食和取暖</li>
+      <li class="fi"><span class="fn" style="background:var(--tl);color:var(--td);border-color:var(--teal)">5</span>後來還會製作陶器，儲存食物和水</li>
+    </ul>
+    <div class="think" style="border-color:var(--teal)"><div class="thtitle" style="color:var(--teal)">💡 想一想</div>我們現在的生活跟5千多年前的中國先民比較，有甚麼不同？</div>
+    <div class="hints">
+      <div class="hint-box">
+        <button class="hint-toggle" onclick="toggleHint(this)">
+          <span class="htag">老師提示</span>衣：沒有穿衣服；食：吃野果、生吃捕獲得來的野獸…
+          <span class="harrow">▼</span>
+        </button>
+        <div class="hint-content">
+          <strong>衣：</strong>沒有穿衣服；<br>
+          <strong>食：</strong>吃野果、生吃捕獲得來的野獸和魚；<br>
+          <strong>住：</strong>住在山洞中；<br>
+          <strong>工具：</strong>使用石頭和木製作的簡單工具。
+        </div>
+      </div>
+      <div class="hint-box">
+        <button class="hint-toggle" onclick="toggleHint(this)">
+          <span class="htag">老師提示</span>五千年前的先民已能做獸皮衣服…
+          <span class="harrow">▼</span>
+        </button>
+        <div class="hint-content">
+          五十年前的先民已經懂得用獸皮來做衣服；懂得通過耕種和畜牧來獲取食物；他們會興建簡單的房屋居住；並懂得使用泥土製造陶器。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav"><button class="nb" disabled>← 上一頁</button><span class="pgind">1 / 5</span><button class="nb p" onclick="show(1)">炎黃時代 →</button></div>
+</div></div>
+
+<!-- CARD 1: 炎黃時代 -->
+<div class="card" id="c1"><div class="box">
+  <div class="hero">
+    <div class="hico" style="background:var(--pl)">👑</div>
+    <div><div class="chapter" style="color:var(--purple)">第二章</div><div class="htitle">炎黃時代</div><div class="htime">約5千年前 — 中華民族的祖先</div></div>
+  </div>
+  <div class="imgs g3">
+    <!-- Yellow Emperor portrait -->
+    <div class="icard">
+      <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="160" fill="#F5E6C8"/>
+        <rect x="6" y="6" width="188" height="148" fill="none" stroke="#C8A040" stroke-width="3" rx="4"/>
+        <path d="M58,158 L58,92 Q100,76 142,92 L142,158Z" fill="#8B1A1A"/>
+        <path d="M63,158 L63,97 Q100,83 137,97 L137,158Z" fill="#AA2222"/>
+        <path d="M80,122 Q90,110 100,118 Q110,126 120,114 Q116,140 100,143 Q84,140 80,122Z" fill="#FFD700" opacity=".65"/>
+        <rect x="86" y="74" width="28" height="20" fill="#D4A574" rx="3"/>
+        <ellipse cx="100" cy="58" rx="26" ry="27" fill="#D4A574"/>
+        <rect x="74" y="30" width="52" height="9" fill="#222" rx="2"/>
+        <rect x="80" y="21" width="40" height="11" fill="#3D2490" rx="2"/>
+        <rect x="87" y="13" width="26" height="10" fill="#5a3ab0" rx="2"/>
+        <circle cx="100" cy="13" r="4" fill="#FFD700"/>
+        <ellipse cx="87" cy="58" rx="5" ry="3.5" fill="#fff"/>
+        <ellipse cx="113" cy="58" rx="5" ry="3.5" fill="#fff"/>
+        <circle cx="88" cy="58" r="2.5" fill="#1a0a00"/>
+        <circle cx="114" cy="58" r="2.5" fill="#1a0a00"/>
+        <path d="M82,52 Q87,49 92,52" fill="none" stroke="#333" stroke-width="1.5"/>
+        <path d="M108,52 Q113,49 118,52" fill="none" stroke="#333" stroke-width="1.5"/>
+        <path d="M92,70 Q100,75 108,70" fill="none" stroke="#8B5E3C" stroke-width="2"/>
+        <path d="M89,66 Q94,69 100,67 Q106,69 111,66" fill="none" stroke="#555" stroke-width="2"/>
+        <path d="M84,78 Q100,90 116,78" fill="none" stroke="#444" stroke-width="1.5"/>
+        <path d="M63,97 Q100,86 137,97" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <text x="100" y="157" text-anchor="middle" font-size="11" fill="#8B1A1A" font-family="serif" font-weight="bold">黃帝</text>
+      </svg>
+      <div class="icap">👑 黃帝畫像</div>
+    </div>
+    <!-- Oracle bone -->
+    <div class="icard">
+      <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="160" fill="#DEC98A"/>
+        <ellipse cx="100" cy="80" rx="56" ry="68" fill="#C9A460"/>
+        <ellipse cx="100" cy="22" rx="36" ry="20" fill="#BE9850"/>
+        <ellipse cx="100" cy="138" rx="36" ry="20" fill="#BE9850"/>
+        <line x1="84" y1="38" x2="90" y2="122" stroke="#7a5010" stroke-width="1" opacity=".5"/>
+        <line x1="112" y1="42" x2="106" y2="118" stroke="#7a5010" stroke-width="1" opacity=".5"/>
+        <text x="70" y="62" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">日</text>
+        <text x="95" y="62" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">月</text>
+        <text x="70" y="86" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">山</text>
+        <text x="95" y="86" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">水</text>
+        <text x="70" y="110" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">火</text>
+        <text x="95" y="110" font-size="16" fill="#3a1a04" font-family="serif" font-weight="bold">木</text>
+      </svg>
+      <div class="icap">📝 甲骨文（最早的文字）</div>
+    </div>
+    <!-- North-pointing chariot -->
+    <div class="icard">
+      <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="160" fill="#EEE0B0"/>
+
+        <!-- chariot body -->
+        <rect x="46" y="66" width="108" height="54" fill="#8B6914" rx="6"/>
+        <rect x="52" y="72" width="96" height="42" fill="#A0782A" rx="4"/>
+        <!-- decorative rails -->
+        <rect x="55" y="77" width="90" height="3" fill="#C8A040" rx="1"/>
+        <rect x="55" y="107" width="90" height="3" fill="#C8A040" rx="1"/>
+        <!-- dragon carved panel on side -->
+        <path d="M60,88 Q68,82 76,88 Q80,96 68,98 Q56,96 60,88Z" fill="#FFD700" opacity=".5"/>
+        <path d="M124,88 Q132,82 140,88 Q144,96 132,98 Q120,96 124,88Z" fill="#FFD700" opacity=".5"/>
+
+        <!-- left wheel -->
+        <circle cx="72" cy="130" r="24" fill="none" stroke="#4a2e10" stroke-width="5"/>
+        <circle cx="72" cy="130" r="7" fill="#4a2e10"/>
+        <line x1="72" y1="106" x2="72" y2="154" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="48"  y1="130" x2="96"  y2="130" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="55"  y1="113" x2="89"  y2="147" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="89"  y1="113" x2="55"  y2="147" stroke="#4a2e10" stroke-width="3"/>
+        <!-- right wheel -->
+        <circle cx="128" cy="130" r="24" fill="none" stroke="#4a2e10" stroke-width="5"/>
+        <circle cx="128" cy="130" r="7" fill="#4a2e10"/>
+        <line x1="128" y1="106" x2="128" y2="154" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="104" y1="130" x2="152" y2="130" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="111" y1="113" x2="145" y2="147" stroke="#4a2e10" stroke-width="3"/>
+        <line x1="145" y1="113" x2="111" y2="147" stroke="#4a2e10" stroke-width="3"/>
+
+        <!-- figure pole -->
+        <rect x="97" y="34" width="6" height="34" fill="#6B4C1A" rx="2"/>
+        <!-- figure body -->
+        <circle cx="100" cy="30" r="9" fill="#D4A574"/>
+        <rect x="93" y="39" width="14" height="18" fill="#8B1A1A" rx="2"/>
+        <!-- figure arms raised directing NORTH -->
+        <line x1="93" y1="44" x2="82" y2="36" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+        <line x1="107" y1="44" x2="118" y2="36" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- compass rose background circle -->
+        <circle cx="100" cy="18" r="15" fill="#fff" stroke="#8B6914" stroke-width="1.5" opacity=".9"/>
+        <!-- N/S/E/W tick marks -->
+        <line x1="100" y1="5"  x2="100" y2="9"  stroke="#555" stroke-width="1.5"/>
+        <line x1="100" y1="27" x2="100" y2="31" stroke="#555" stroke-width="1.5"/>
+        <line x1="87"  y1="18" x2="91"  y2="18" stroke="#555" stroke-width="1.5"/>
+        <line x1="109" y1="18" x2="113" y2="18" stroke="#555" stroke-width="1.5"/>
+        <!-- arrow pointing NORTH (up) — red tip up, white tail down -->
+        <polygon points="100,6 96,18 104,18"  fill="#CC2200"/>
+        <polygon points="100,30 96,18 104,18" fill="#aaa"/>
+        <!-- N label -->
+        <text x="100" y="4"  text-anchor="middle" font-size="7" fill="#CC2200" font-family="sans-serif" font-weight="900">北</text>
+        <text x="100" y="36" text-anchor="middle" font-size="6" fill="#888"    font-family="sans-serif">南</text>
+        <text x="86"  y="21" text-anchor="middle" font-size="6" fill="#888"    font-family="sans-serif">西</text>
+        <text x="114" y="21" text-anchor="middle" font-size="6" fill="#888"    font-family="sans-serif">東</text>
+      </svg>
+      <div class="icap">🧭 指南車</div>
+    </div>
+  </div>
+  <!-- Second row: silk + map -->
+  <div class="imgs g2" style="margin-top:8px">
+    <div class="icard">
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="100" fill="#FFF0F5"/>
+        <rect x="28" y="42" width="9" height="48" fill="#5D4037"/>
+        <circle cx="32" cy="35" rx="22" r="22" fill="#4CAF50"/>
+        <circle cx="19" cy="46" r="14" fill="#388E3C"/>
+        <circle cx="46" cy="46" r="14" fill="#388E3C"/>
+        <ellipse cx="32" cy="33" rx="6" ry="3" fill="#f5e06a"/>
+        <ellipse cx="25" cy="39" rx="5" ry="2.5" fill="#f5e06a"/>
+        <ellipse cx="100" cy="50" rx="19" ry="12" fill="#FFFFF0"/>
+        <ellipse cx="139" cy="54" rx="16" ry="10" fill="#FFFFF0"/>
+        <ellipse cx="121" cy="67" rx="13" ry="9" fill="#FFFFF0"/>
+        <path d="M118,48 Q142,28 168,18" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <path d="M121,56 Q148,38 172,28" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <rect x="163" y="13" width="18" height="32" fill="#8B4513" rx="3"/>
+        <rect x="159" y="13" width="26" height="5" fill="#6D3410" rx="2"/>
+        <rect x="159" y="40" width="26" height="5" fill="#6D3410" rx="2"/>
+        <text x="100" y="93" text-anchor="middle" font-size="10" fill="#880044" font-family="sans-serif" font-weight="bold">養蠶取絲</text>
+      </svg>
+      <div class="icap">🧵 養蠶取絲（黃帝妻子的發明）</div>
+    </div>
+    <div class="icard">
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="100" fill="#D4E8C2"/>
+        <path d="M28,18 L82,13 L143,18 L172,34 L177,60 L161,82 L129,92 L88,90 L58,82 L33,64 L23,44Z" fill="#A8D080" stroke="#7aab50" stroke-width="1.5"/>
+        <path d="M48,28 Q70,22 92,38 Q113,54 133,44 Q153,34 167,56 Q172,67 156,78" fill="none" stroke="#D4AC0D" stroke-width="4" stroke-linecap="round"/>
+        <path d="M53,64 Q80,58 112,66 Q137,74 157,71" fill="none" stroke="#4a90d9" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="95" cy="40" r="9" fill="#7F77DD" opacity=".9"/>
+        <text x="95" y="44" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">黃帝</text>
+        <circle cx="73" cy="55" r="9" fill="#D85A30" opacity=".9"/>
+        <text x="73" y="59" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">炎帝</text>
+        <line x1="13" y1="80" x2="28" y2="80" stroke="#D4AC0D" stroke-width="3"/>
+        <text x="30" y="83" font-size="8" fill="#8B6914" font-family="sans-serif">黃河</text>
+        <line x1="13" y1="92" x2="28" y2="92" stroke="#4a90d9" stroke-width="2.5"/>
+        <text x="30" y="95" font-size="8" fill="#1a5fa8" font-family="sans-serif">長江</text>
+      </svg>
+      <div class="icap">🗺️ 黃帝炎帝在黃河流域</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="sl">重要人物</div>
+    <div class="chips">
+      <div class="chip"><span class="dot" style="background:var(--purple)"></span>黃帝</div>
+      <div class="chip"><span class="dot" style="background:var(--coral)"></span>炎帝</div>
+      <div class="chip"><span class="dot" style="background:#888"></span>蚩尤</div>
+    </div>
+    <div class="sl">重要事件</div>
+    <ul class="facts">
+      <li class="fi"><span class="fn" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">1</span>中國有很多不同的部落，其中黃帝和炎帝的部落最強大</li>
+      <li class="fi"><span class="fn" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">2</span>黃帝聯合炎帝，合力打敗了蚩尤和他的部落</li>
+      <li class="fi"><span class="fn" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">3</span>黃帝和炎帝的部落在黃河流域定居，成為中華民族的祖先</li>
+    </ul>
+    <div class="sl">黃帝時期的重要發明</div>
+    <div class="invs">
+      <div class="inv" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">📝 文字</div>
+      <div class="inv" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">🧭 指南車</div>
+      <div class="inv" style="background:var(--pl);color:var(--pd);border-color:var(--purple)">🧵 養蠶取絲</div>
+    </div>
+    <div class="callout" style="background:var(--pl);border-color:var(--purple);color:var(--pd)"><strong>知道嗎？</strong> 中國人自稱「炎黃子孫」，就是因為炎帝和黃帝是我們共同的祖先！</div>
+    <div class="hints">
+      <div class="hint-box">
+        <button class="hint-toggle" onclick="toggleHint(this)">
+          <span class="htag">老師提示</span>「炎」指炎帝；「黃」指黃帝，是中華民族的祖先…<span class="harrow">▼</span>
+        </button>
+        <div class="hint-content">「炎」指炎帝；「黃」指黃帝。相傳他們組成當時最大的部落，是中華民族的祖先，所以中國人自稱為「炎黃子孫」。</div>
+      </div>
+      <div class="hint-box">
+        <button class="hint-toggle" onclick="toggleHint(this)">
+          <span class="htag">老師提示</span>黃帝和炎帝在黃河附近聚居的好處和壞處…<span class="harrow">▼</span>
+        </button>
+        <div class="hint-content"><strong>好處：</strong>附近的水源充足，能滿足日常生活的需要，如耕種、飼養禽畜等。<br><strong>壞處：</strong>容易發生水災，造成人命傷亡、財物損失等。</div>
+      </div>
+      <div class="hint-box">
+        <button class="hint-toggle" onclick="toggleHint(this)">
+          <span class="htag">老師提示</span>文字、指南車、養蠶取絲各有甚麼用途？<span class="harrow">▼</span>
+        </button>
+        <div class="hint-content"><strong>A. 文字：</strong>可以記錄事情。<br><strong>B. 指南車：</strong>可以辨別方向，不容易迷路。<br><strong>C. 養蠶取絲：</strong>可以編織出輕而滑的布料做衣服。</div>
+      </div>
+    </div>
+  </div>
+  <div class="nav"><button class="nb" onclick="show(0)">← 遠古先民</button><span class="pgind">2 / 5</span><button class="nb p" onclick="show(2)">夏朝 →</button></div>
+</div></div>
+
+<!-- CARD 2: 夏朝 -->
+<div class="card" id="c2"><div class="box">
+  <div class="hero">
+    <div class="hico" style="background:var(--cl)">🏯</div>
+    <div><div class="chapter" style="color:var(--coral)">第三章</div><div class="htitle">夏朝</div><div class="htime">約4千年前 — 中國第一個朝代</div></div>
+  </div>
+  <div class="imgs g3">
+    <!-- Yu flood control - detailed scene -->
+    <div class="icard">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+        <!-- stormy sky gradient -->
+        <rect width="200" height="150" fill="#4a7fa8"/>
+        <rect width="200" height="55" fill="#3a6080"/>
+        <!-- rain streaks -->
+        <g stroke="#aad4f0" stroke-width="1" opacity=".5">
+          <line x1="20"  y1="0" x2="14"  y2="30"/>
+          <line x1="45"  y1="0" x2="39"  y2="30"/>
+          <line x1="70"  y1="0" x2="64"  y2="30"/>
+          <line x1="95"  y1="0" x2="89"  y2="30"/>
+          <line x1="120" y1="0" x2="114" y2="30"/>
+          <line x1="145" y1="0" x2="139" y2="30"/>
+          <line x1="170" y1="0" x2="164" y2="30"/>
+          <line x1="195" y1="0" x2="189" y2="30"/>
+        </g>
+        <!-- storm clouds -->
+        <ellipse cx="40"  cy="18" rx="34" ry="14" fill="#2a4a60" opacity=".9"/>
+        <ellipse cx="80"  cy="12" rx="30" ry="12" fill="#243f52" opacity=".85"/>
+        <ellipse cx="130" cy="16" rx="38" ry="14" fill="#2a4a60" opacity=".9"/>
+        <ellipse cx="175" cy="10" rx="28" ry="11" fill="#243f52" opacity=".8"/>
+        <!-- lightning bolt -->
+        <polygon points="155,8 148,24 154,24 146,40 158,22 152,22 160,8" fill="#FFE040" opacity=".9"/>
+
+        <!-- flooded ground / embankment -->
+        <rect x="0" y="95" width="200" height="55" fill="#1a5a8a"/>
+        <!-- water surface waves -->
+        <path d="M0,95 Q20,89 40,95 Q60,101 80,95 Q100,89 120,95 Q140,101 160,95 Q180,89 200,95" fill="none" stroke="#5ab0e0" stroke-width="2"/>
+        <path d="M0,105 Q25,99 50,105 Q75,111 100,105 Q125,99 150,105 Q175,111 200,105" fill="none" stroke="#4aa0d0" stroke-width="1.5" opacity=".6"/>
+        <!-- mud earth mound where Yu stands -->
+        <ellipse cx="82" cy="96" rx="38" ry="10" fill="#7a5a30"/>
+        <rect x="44" y="86" width="76" height="12" fill="#8a6a3a" rx="4"/>
+
+        <!-- YU figure - large, heroic pose -->
+        <!-- legs planted wide -->
+        <rect x="74" y="108" width="8"  height="20" fill="#6a3a10" rx="3" transform="rotate(-5,78,108)"/>
+        <rect x="86" y="108" width="8"  height="20" fill="#6a3a10" rx="3" transform="rotate(5,90,108)"/>
+        <!-- robe / body -->
+        <path d="M68,70 Q82,62 100,64 Q118,62 132,70 L128,110 Q100,118 72,110Z" fill="#8B1A1A"/>
+        <path d="M72,72 Q86,65 100,67 Q114,65 128,72 L124,108 Q100,115 76,108Z" fill="#AA2222"/>
+        <!-- belt -->
+        <rect x="74" y="97" width="52" height="6" fill="#FFD700" rx="2"/>
+        <!-- collar/shoulders -->
+        <path d="M68,70 Q78,66 88,70" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <path d="M112,70 Q122,66 132,70" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <!-- neck -->
+        <rect x="93" y="56" width="14" height="14" fill="#D4A574" rx="2"/>
+        <!-- head -->
+        <ellipse cx="100" cy="46" rx="16" ry="17" fill="#D4A574"/>
+        <!-- headband / hat -->
+        <rect x="84" y="30" width="32" height="8"  fill="#333" rx="3"/>
+        <rect x="88" y="23" width="24" height="9"  fill="#444" rx="2"/>
+        <rect x="93" y="17" width="14" height="8"  fill="#555" rx="2"/>
+        <!-- face -->
+        <ellipse cx="93" cy="46" rx="3.5" ry="2.5" fill="#fff"/>
+        <ellipse cx="107" cy="46" rx="3.5" ry="2.5" fill="#fff"/>
+        <circle cx="94"  cy="46" r="2"    fill="#1a0a00"/>
+        <circle cx="108" cy="46" r="2"    fill="#1a0a00"/>
+        <!-- furrowed brows - working hard -->
+        <path d="M88,40 Q92,37 96,40" fill="none" stroke="#333" stroke-width="1.5"/>
+        <path d="M104,40 Q108,37 112,40" fill="none" stroke="#333" stroke-width="1.5"/>
+        <!-- determined mouth -->
+        <path d="M95,53 Q100,55 105,53" fill="none" stroke="#8B5E3C" stroke-width="1.5"/>
+
+        <!-- LEFT ARM - holding shovel/spade overhead -->
+        <line x1="72" y1="76" x2="50" y2="52" stroke="#D4A574" stroke-width="5" stroke-linecap="round"/>
+        <!-- spade handle -->
+        <line x1="50" y1="52" x2="36" y2="28" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+        <!-- spade blade -->
+        <rect x="24" y="18" width="18" height="13" fill="#888" rx="2" transform="rotate(-20,33,24)"/>
+
+        <!-- RIGHT ARM - pointing/directing channel -->
+        <line x1="128" y1="78" x2="155" y2="62" stroke="#D4A574" stroke-width="5" stroke-linecap="round"/>
+        <!-- pointing finger -->
+        <line x1="155" y1="62" x2="168" y2="52" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- water channel being dug - flowing right -->
+        <path d="M140,105 Q160,100 180,108 Q192,114 200,110 L200,130 Q180,126 160,120 Q142,118 140,105Z" fill="#2980B9" opacity=".8"/>
+        <path d="M145,110 Q162,106 182,114" fill="none" stroke="#5ab0e0" stroke-width="1.5" opacity=".7"/>
+
+        <!-- workers in background -->
+        <circle cx="155" cy="82" r="6" fill="#C4906A"/>
+        <rect x="151" y="88" width="8" height="12" fill="#555" rx="1"/>
+        <line x1="158" y1="90" x2="165" y2="100" stroke="#5D4037" stroke-width="2"/>
+
+        <circle cx="30" cy="78" r="6" fill="#C4906A"/>
+        <rect x="26" y="84" width="8" height="12" fill="#555" rx="1"/>
+        <line x1="26" y1="86" x2="18" y2="95" stroke="#5D4037" stroke-width="2"/>
+
+        <!-- label -->
+        <rect x="55" y="135" width="90" height="13" fill="rgba(0,0,0,.45)" rx="4"/>
+        <text x="100" y="145" text-anchor="middle" font-size="10" fill="#fff" font-family="sans-serif" font-weight="bold">大禹治水</text>
+      </svg>
+      <div class="icap">🌊 大禹指揮治理洪水</div>
+    </div>
+    <!-- Father to son -->
+    <div class="icard">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="150" fill="#FFF3E0"/>
+        <text x="100" y="17" text-anchor="middle" font-size="11" fill="#8B4513" font-family="sans-serif" font-weight="bold">禪讓 → 世襲</text>
+        <circle cx="52" cy="52" r="17" fill="#D4A574"/>
+        <rect x="36" y="68" width="32" height="34" fill="#8B1A1A" rx="3"/>
+        <ellipse cx="52" cy="38" rx="19" ry="9" fill="#222"/>
+        <rect x="42" y="32" width="20" height="8" fill="#333" rx="2"/>
+        <circle cx="52" cy="30" r="4" fill="#FFD700"/>
+        <circle cx="46" cy="51" r="2.2" fill="#333"/>
+        <circle cx="58" cy="51" r="2.2" fill="#333"/>
+        <path d="M47,60 Q52,65 57,60" fill="none" stroke="#8B5E3C" stroke-width="1.5"/>
+        <path d="M42,63 Q52,70 62,63" fill="none" stroke="#aaa" stroke-width="2"/>
+        <text x="52" y="114" text-anchor="middle" font-size="10" fill="#8B1A1A" font-family="sans-serif">禹（父）</text>
+        <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#C07030"/></marker></defs>
+        <path d="M78,68 L122,68" stroke="#C07030" stroke-width="2.5" marker-end="url(#a2)"/>
+        <text x="100" y="63" text-anchor="middle" font-size="9" fill="#C07030" font-family="sans-serif">傳位給兒子</text>
+        <circle cx="148" cy="55" r="15" fill="#D4A574"/>
+        <rect x="134" y="70" width="28" height="30" fill="#AA2222" rx="3"/>
+        <ellipse cx="148" cy="43" rx="17" ry="7" fill="#333"/>
+        <rect x="139" y="37" width="18" height="8" fill="#444" rx="2"/>
+        <circle cx="148" cy="35" r="3.5" fill="#FFD700"/>
+        <circle cx="143" cy="54" r="2.2" fill="#333"/>
+        <circle cx="153" cy="54" r="2.2" fill="#333"/>
+        <path d="M143,63 Q148,68 153,63" fill="none" stroke="#8B5E3C" stroke-width="1.5"/>
+        <text x="148" y="114" text-anchor="middle" font-size="10" fill="#AA2222" font-family="sans-serif">啟（子）</text>
+        <rect x="58" y="124" width="84" height="22" fill="#8B1A1A" rx="4"/>
+        <text x="100" y="139" text-anchor="middle" font-size="11" fill="#FFD700" font-family="sans-serif" font-weight="bold">夏朝建立</text>
+      </svg>
+      <div class="icap">👑 禹把王位傳給兒子啟</div>
+    </div>
+    <!-- Bronze ding -->
+    <div class="icard">
+      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="150" fill="#E8D5A3"/>
+        <ellipse cx="100" cy="54" rx="46" ry="16" fill="#7a9a6a"/>
+        <path d="M54,54 Q51,97 60,112 L140,112 Q149,97 146,54Z" fill="#6B8C5A"/>
+        <ellipse cx="100" cy="54" rx="46" ry="16" fill="none" stroke="#4a6a3a" stroke-width="3"/>
+        <circle cx="100" cy="82" r="19" fill="none" stroke="#4a6a3a" stroke-width="2"/>
+        <circle cx="93" cy="77" r="3" fill="#4a6a3a"/>
+        <circle cx="107" cy="77" r="3" fill="#4a6a3a"/>
+        <path d="M93,88 Q100,94 107,88" fill="none" stroke="#4a6a3a" stroke-width="2"/>
+        <path d="M87,73 Q85,67 83,73" fill="none" stroke="#4a6a3a" stroke-width="1.5"/>
+        <path d="M113,73 Q115,67 117,73" fill="none" stroke="#4a6a3a" stroke-width="1.5"/>
+        <rect x="70" y="110" width="13" height="30" fill="#5a7a4a" rx="3"/>
+        <rect x="93" y="110" width="13" height="30" fill="#5a7a4a" rx="3"/>
+        <rect x="117" y="110" width="13" height="30" fill="#5a7a4a" rx="3"/>
+        <path d="M54,51 Q40,51 40,65 Q40,78 54,76" fill="none" stroke="#5a7a4a" stroke-width="7" stroke-linecap="round"/>
+        <path d="M146,51 Q160,51 160,65 Q160,78 146,76" fill="none" stroke="#5a7a4a" stroke-width="7" stroke-linecap="round"/>
+        <text x="100" y="148" text-anchor="middle" font-size="10" fill="#3a2008" font-family="sans-serif">夏朝青銅鼎</text>
+      </svg>
+      <div class="icap">🏺 夏朝時期的青銅鼎</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="sl">重要人物</div>
+    <div class="chips">
+      <div class="chip"><span class="dot" style="background:var(--coral)"></span>禹（治水英雄）</div>
+      <div class="chip"><span class="dot" style="background:#F5A623"></span>啟（禹的兒子）</div>
+    </div>
+    <div class="sl">夏朝是怎樣建立的？</div>
+    <ul class="facts">
+      <li class="fi"><span class="fn" style="background:var(--cl);color:var(--cd);border-color:var(--coral)">1</span>部落首領委任禹治理洪水，禹努力工作，三次經過家門也不進去</li>
+      <li class="fi"><span class="fn" style="background:var(--cl);color:var(--cd);border-color:var(--coral)">2</span>禹終於成功治水，部落首領欣賞他的才能，決定把位置讓給他</li>
+      <li class="fi"><span class="fn" style="background:var(--cl);color:var(--cd);border-color:var(--coral)">3</span>禹年老時，把首領的位置傳給自己的兒子啟</li>
+      <li class="fi"><span class="fn" style="background:var(--cl);color:var(--cd);border-color:var(--coral)">4</span>自此，首領的位置由父傳子，建立了中國第一個朝代——夏朝</li>
+    </ul>
+    <div class="think" style="border-color:var(--coral)"><div class="thtitle" style="color:var(--coral)">💡 想一想</div>如果你是部落首領，你會把位置傳給自己的兒子，還是其他有才能的人？為甚麼？</div>
+  </div>
+  <div class="nav"><button class="nb" onclick="show(1)">← 炎黃時代</button><span class="pgind">3 / 5</span><button class="nb p" onclick="show(3)">秦朝 →</button></div>
+</div></div>
+
+<!-- CARD 3: 秦朝 -->
+<div class="card" id="c3"><div class="box">
+  <div class="hero">
+    <div class="hico" style="background:var(--bl)">🏛️</div>
+    <div><div class="chapter" style="color:var(--blue)">第四章</div><div class="htitle">秦朝</div><div class="htime">約2千年前 — 中國第一個皇帝</div></div>
+  </div>
+  <div class="imgs g2">
+    <!-- Qin Shi Huang - full imperial costume -->
+    <div class="icard">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="170" fill="#F5EDD0"/>
+        <!-- decorative border with dragon motif -->
+        <rect x="4" y="4" width="192" height="162" fill="none" stroke="#8B6914" stroke-width="2.5" rx="4"/>
+        <rect x="8" y="8" width="184" height="154" fill="none" stroke="#C8A040" stroke-width="1" rx="3"/>
+        <!-- corner ornaments -->
+        <circle cx="12"  cy="12"  r="4" fill="#C8A040"/>
+        <circle cx="188" cy="12"  r="4" fill="#C8A040"/>
+        <circle cx="12"  cy="158" r="4" fill="#C8A040"/>
+        <circle cx="188" cy="158" r="4" fill="#C8A040"/>
+
+        <!-- FEET / shoes -->
+        <ellipse cx="82"  cy="158" rx="14" ry="6" fill="#1a1a3a"/>
+        <ellipse cx="118" cy="158" rx="14" ry="6" fill="#1a1a3a"/>
+        <!-- turned-up toe shoes -->
+        <path d="M68,156 Q76,148 90,154 L90,160 Q76,162 68,156Z" fill="#2a2a5a"/>
+        <path d="M132,156 Q124,148 110,154 L110,160 Q124,162 132,156Z" fill="#2a2a5a"/>
+
+        <!-- LOWER ROBE - wide floor-length -->
+        <path d="M52,130 Q100,120 148,130 L155,162 L45,162Z" fill="#4a0a0a"/>
+        <path d="M56,132 Q100,123 144,132 L150,160 L50,160Z" fill="#6B0E0E"/>
+        <!-- robe hem decoration - gold wave pattern -->
+        <path d="M50,155 Q65,149 80,155 Q95,161 110,155 Q125,149 140,155 Q150,159 155,158" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <path d="M48,162 Q70,156 100,160 Q130,156 152,162" fill="none" stroke="#C8A040" stroke-width="1.5"/>
+
+        <!-- UPPER ROBE BODY - wide sleeves -->
+        <path d="M40,80 Q100,65 160,80 L155,135 Q100,148 45,135Z" fill="#8B0000"/>
+        <path d="M45,82 Q100,68 155,82 L150,133 Q100,145 50,133Z" fill="#AA1111"/>
+
+        <!-- BIG WIDE SLEEVES - left -->
+        <path d="M45,85 Q20,90 8,110 Q4,125 15,130 Q28,133 42,120 L50,100Z" fill="#8B0000"/>
+        <path d="M46,88 Q22,93 12,112 Q9,124 18,128 Q29,130 43,118 L51,102Z" fill="#AA1111"/>
+        <!-- sleeve cuff left -->
+        <path d="M8,110 Q4,125 15,130 Q28,133 42,120" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+        <!-- hand peeking from left sleeve -->
+        <ellipse cx="20" cy="124" rx="7" ry="5" fill="#D4A574" transform="rotate(-20,20,124)"/>
+
+        <!-- BIG WIDE SLEEVES - right -->
+        <path d="M155,85 Q180,90 192,110 Q196,125 185,130 Q172,133 158,120 L150,100Z" fill="#8B0000"/>
+        <path d="M154,88 Q178,93 188,112 Q191,124 182,128 Q171,130 157,118 L149,102Z" fill="#AA1111"/>
+        <!-- sleeve cuff right -->
+        <path d="M192,110 Q196,125 185,130 Q172,133 158,120" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+        <!-- hand peeking from right sleeve - holding jade tablet -->
+        <ellipse cx="180" cy="124" rx="7" ry="5" fill="#D4A574" transform="rotate(20,180,124)"/>
+        <rect x="176" y="114" width="8" height="14" fill="#7EC8A0" rx="1" transform="rotate(15,180,121)"/>
+
+        <!-- ROBE decorations - dragon embroidery -->
+        <path d="M70,95 Q80,85 90,92 Q98,100 88,108 Q76,112 68,105 Q63,98 70,95Z" fill="#FFD700" opacity=".55"/>
+        <path d="M73,97 Q79,91 87,96" fill="none" stroke="#C8A040" stroke-width="1"/>
+        <!-- dragon tail -->
+        <path d="M68,105 Q60,114 65,122 Q70,128 75,118" fill="none" stroke="#FFD700" stroke-width="1.5" opacity=".6"/>
+
+        <path d="M110,95 Q120,85 130,92 Q138,100 128,108 Q116,112 108,105 Q103,98 110,95Z" fill="#FFD700" opacity=".55"/>
+        <path d="M113,97 Q119,91 127,96" fill="none" stroke="#C8A040" stroke-width="1"/>
+        <path d="M108,105 Q100,114 105,122 Q110,128 115,118" fill="none" stroke="#FFD700" stroke-width="1.5" opacity=".6"/>
+
+        <!-- collar / front opening V -->
+        <path d="M85,68 L100,90 L115,68" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+        <path d="M50,133 Q100,148 150,133" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+
+        <!-- NECK -->
+        <rect x="91" y="56" width="18" height="16" fill="#D4A574" rx="3"/>
+
+        <!-- HEAD -->
+        <ellipse cx="100" cy="42" rx="22" ry="24" fill="#D4A574"/>
+        <!-- ears -->
+        <ellipse cx="78"  cy="44" rx="5" ry="7" fill="#C49060"/>
+        <ellipse cx="122" cy="44" rx="5" ry="7" fill="#C49060"/>
+
+        <!-- IMPERIAL CROWN - mian liu -->
+        <!-- board (延) - flat top board -->
+        <rect x="72" y="10" width="56" height="8" fill="#1a1a1a" rx="2"/>
+        <!-- front fringe (旒) - 5 jade beads hanging in front -->
+        <line x1="80" y1="18" x2="80" y2="35" stroke="#333" stroke-width="1"/>
+        <circle cx="80" cy="21" r="2.5" fill="#7EC8A0"/>
+        <circle cx="80" cy="27" r="2.5" fill="#E74040"/>
+        <circle cx="80" cy="33" r="2.5" fill="#7EC8A0"/>
+        <line x1="88" y1="18" x2="88" y2="33" stroke="#333" stroke-width="1"/>
+        <circle cx="88" cy="21" r="2.5" fill="#E74040"/>
+        <circle cx="88" cy="27" r="2.5" fill="#7EC8A0"/>
+        <circle cx="88" cy="33" r="2.5" fill="#FFD700"/>
+        <!-- hat body -->
+        <rect x="76" y="14" width="48" height="14" fill="#222" rx="3"/>
+        <rect x="80" y="18" width="40" height="8"  fill="#333" rx="2"/>
+        <!-- gold trim on crown -->
+        <rect x="72" y="10" width="56" height="3"  fill="#FFD700" rx="1"/>
+        <rect x="72" y="25" width="56" height="2"  fill="#C8A040" rx="1"/>
+        <!-- jewel center -->
+        <circle cx="100" cy="15" r="4" fill="#FFD700"/>
+        <circle cx="100" cy="15" r="2" fill="#FF4444"/>
+
+        <!-- FACE features -->
+        <ellipse cx="90"  cy="42" rx="5" ry="3.5" fill="#fff"/>
+        <ellipse cx="110" cy="42" rx="5" ry="3.5" fill="#fff"/>
+        <circle cx="91"  cy="42" r="2.5" fill="#1a0800"/>
+        <circle cx="111" cy="42" r="2.5" fill="#1a0800"/>
+        <!-- pupils glint -->
+        <circle cx="92"  cy="41" r="0.8" fill="#fff"/>
+        <circle cx="112" cy="41" r="0.8" fill="#fff"/>
+        <!-- strong brows -->
+        <path d="M84,36 Q90,33 96,36"  fill="none" stroke="#222" stroke-width="2"/>
+        <path d="M104,36 Q110,33 116,36" fill="none" stroke="#222" stroke-width="2"/>
+        <!-- regal nose -->
+        <path d="M98,44 Q100,50 102,44" fill="none" stroke="#C49060" stroke-width="1.5"/>
+        <!-- thin imperial moustache -->
+        <path d="M90,52 Q95,54 100,52 Q105,54 110,52" fill="none" stroke="#333" stroke-width="2"/>
+        <!-- short beard lines -->
+        <line x1="93" y1="55" x2="91" y2="62" stroke="#555" stroke-width="1"/>
+        <line x1="97" y1="56" x2="96" y2="63" stroke="#555" stroke-width="1"/>
+        <line x1="103" y1="56" x2="104" y2="63" stroke="#555" stroke-width="1"/>
+        <line x1="107" y1="55" x2="109" y2="62" stroke="#555" stroke-width="1"/>
+
+        <!-- name label -->
+        <rect x="62" y="153" width="76" height="13" fill="#8B0000" rx="3"/>
+        <text x="100" y="163" text-anchor="middle" font-size="10" fill="#FFD700" font-family="serif" font-weight="bold">秦始皇 · 天下一統</text>
+      </svg>
+      <div class="icap">👑 秦始皇皇帝服飾</div>
+    </div>
+    <!-- Great Wall -->
+    <div class="icard">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="170" fill="#87CEEB"/>
+        <ellipse cx="35" cy="22" rx="25" ry="10" fill="#fff" opacity=".8"/>
+        <ellipse cx="158" cy="18" rx="20" ry="8" fill="#fff" opacity=".8"/>
+        <polygon points="0,110 42,54 84,110" fill="#7a9a6a"/>
+        <polygon points="52,110 102,44 152,110" fill="#6B8C5A"/>
+        <polygon points="122,110 172,58 200,110" fill="#7a9a6a"/>
+        <polygon points="0,110 42,72 84,110" fill="#5a7a4a"/>
+        <rect x="0" y="99" width="200" height="22" fill="#C8B89A"/>
+        <rect x="0" y="91" width="200" height="11" fill="#D4C4A8"/>
+        <rect x="4" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="23" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="42" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="61" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="80" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="99" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="118" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="137" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="156" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="175" y="82" width="13" height="11" fill="#D4C4A8"/>
+        <rect x="86" y="52" width="28" height="42" fill="#BEA882"/>
+        <rect x="82" y="47" width="36" height="10" fill="#C8B89A"/>
+        <rect x="85" y="39" width="30" height="10" fill="#BEA882"/>
+        <rect x="81" y="35" width="38" height="6" fill="#C8B89A"/>
+        <rect x="94" y="62" width="12" height="14" fill="#333" rx="1"/>
+        <circle cx="28" cy="88" r="4.5" fill="#555"/>
+        <rect x="25" y="92" width="7" height="11" fill="#555" rx="1"/>
+        <circle cx="172" cy="88" r="4.5" fill="#555"/>
+        <rect x="169" y="92" width="7" height="11" fill="#555" rx="1"/>
+        <rect x="0" y="121" width="200" height="49" fill="#5a8a3c"/>
+        <text x="100" y="158" text-anchor="middle" font-size="11" fill="#fff" font-family="sans-serif" font-weight="bold">萬里長城</text>
+      </svg>
+      <div class="icap">🧱 萬里長城</div>
+    </div>
+  </div>
+  <div class="imgs g2" style="margin-top:8px">
+    <!-- Terracotta warriors -->
+    <div class="icard">
+      <svg viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="110" fill="#C4A882"/>
+        <rect x="8" y="18" width="184" height="76" fill="#8B7355" rx="3"/>
+        <rect x="14" y="24" width="172" height="64" fill="#A0896A"/>
+        <g fill="#C4A882" stroke="#8B7355" stroke-width="0.5">
+          <ellipse cx="28" cy="47" rx="7" ry="9"/><rect x="22" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="50" cy="47" rx="7" ry="9"/><rect x="44" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="72" cy="47" rx="7" ry="9"/><rect x="66" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="94" cy="47" rx="7" ry="9"/><rect x="88" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="116" cy="47" rx="7" ry="9"/><rect x="110" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="138" cy="47" rx="7" ry="9"/><rect x="132" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="160" cy="47" rx="7" ry="9"/><rect x="154" y="56" width="12" height="20" rx="2"/>
+          <ellipse cx="182" cy="47" rx="7" ry="9"/><rect x="176" y="56" width="12" height="20" rx="2"/>
+        </g>
+        <circle cx="28" cy="45" r="1.5" fill="#8B6914"/><circle cx="32" cy="45" r="1.5" fill="#8B6914"/>
+        <circle cx="50" cy="45" r="1.5" fill="#8B6914"/><circle cx="54" cy="45" r="1.5" fill="#8B6914"/>
+        <line x1="36" y1="32" x2="36" y2="76" stroke="#6D4C1A" stroke-width="1.5"/>
+        <line x1="58" y1="32" x2="58" y2="76" stroke="#6D4C1A" stroke-width="1.5"/>
+        <line x1="80" y1="32" x2="80" y2="76" stroke="#6D4C1A" stroke-width="1.5"/>
+        <line x1="102" y1="32" x2="102" y2="76" stroke="#6D4C1A" stroke-width="1.5"/>
+        <text x="100" y="105" text-anchor="middle" font-size="10" fill="#3a1a04" font-family="sans-serif" font-weight="bold">秦始皇兵馬俑</text>
+      </svg>
+      <div class="icap">⚔️ 秦始皇兵馬俑</div>
+    </div>
+    <!-- 6 kingdoms to 1 -->
+    <div class="icard">
+      <svg viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="110" fill="#E8D5B0"/>
+        <text x="100" y="14" text-anchor="middle" font-size="11" fill="#8B1A1A" font-family="sans-serif" font-weight="bold">秦統一六國</text>
+        <rect x="8" y="20" width="22" height="18" fill="#4a90d9" rx="2" opacity=".8"/><text x="19" y="33" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">齊</text>
+        <rect x="34" y="20" width="22" height="18" fill="#d9844a" rx="2" opacity=".8"/><text x="45" y="33" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">楚</text>
+        <rect x="60" y="20" width="22" height="18" fill="#4ab068" rx="2" opacity=".8"/><text x="71" y="33" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">燕</text>
+        <rect x="8" y="42" width="22" height="18" fill="#9b59b6" rx="2" opacity=".8"/><text x="19" y="55" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">韓</text>
+        <rect x="34" y="42" width="22" height="18" fill="#d4ac0d" rx="2" opacity=".8"/><text x="45" y="55" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">趙</text>
+        <rect x="60" y="42" width="22" height="18" fill="#e74c3c" rx="2" opacity=".8"/><text x="71" y="55" text-anchor="middle" font-size="8" fill="#fff" font-family="sans-serif">魏</text>
+        <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#8B1A1A"/></marker></defs>
+        <path d="M88,38 L118,38" stroke="#8B1A1A" stroke-width="3" marker-end="url(#a3)"/>
+        <text x="103" y="33" text-anchor="middle" font-size="8" fill="#8B1A1A" font-family="sans-serif">統一</text>
+        <rect x="123" y="20" width="62" height="46" fill="#8B1A1A" rx="4"/>
+        <text x="154" y="47" text-anchor="middle" font-size="16" fill="#FFD700" font-family="serif" font-weight="bold">秦</text>
+        <text x="154" y="62" text-anchor="middle" font-size="9" fill="#FFD700" font-family="sans-serif">天下一統</text>
+        <text x="100" y="100" text-anchor="middle" font-size="9" fill="#5a2a00" font-family="sans-serif">秦國打敗六國，建立秦朝</text>
+      </svg>
+      <div class="icap">🗺️ 秦國統一六國</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="sl">重要人物</div>
+    <div class="chips"><div class="chip"><span class="dot" style="background:var(--blue)"></span>秦始皇（第一個皇帝）</div></div>
+    <div class="sl">重要事件</div>
+    <ul class="facts">
+      <li class="fi"><span class="fn" style="background:var(--bl);color:var(--bd);border-color:var(--blue)">1</span>中國土地上有很多小國，小國之間常常發生戰爭</li>
+      <li class="fi"><span class="fn" style="background:var(--bl);color:var(--bd);border-color:var(--blue)">2</span>秦國打敗其他所有小國，統一了中國，建立秦朝</li>
+      <li class="fi"><span class="fn" style="background:var(--bl);color:var(--bd);border-color:var(--blue)">3</span>秦朝的開國皇帝自稱「始皇帝」，即中國第一個皇帝</li>
+      <li class="fi"><span class="fn" style="background:var(--bl);color:var(--bd);border-color:var(--blue)">4</span>秦始皇下令修建萬里長城，有助抵抗外族的入侵</li>
+    </ul>
+    <div class="callout" style="background:var(--bl);border-color:var(--blue);color:var(--bd)"><strong>🧱 知道嗎？</strong> 萬里長城是世界著名的古蹟，也是世界文化遺產。很多男子被迫到長城做苦工修建它。</div>
+  </div>
+  <div class="nav"><button class="nb" onclick="show(2)">← 夏朝</button><span class="pgind">4 / 5</span><button class="nb p" onclick="show(4)">現代中國 →</button></div>
+</div></div>
+
+<!-- CARD 4: 現代中國 -->
+<div class="card" id="c4"><div class="box">
+  <div class="hero">
+    <div class="hico" style="background:var(--gl)">🌟</div>
+    <div><div class="chapter" style="color:var(--green)">第五章</div><div class="htitle">現代中國</div><div class="htime">1912年至今</div></div>
+  </div>
+  <div class="imgs g3">
+    <!-- Sun Yat-sen portrait -->
+    <div class="icard">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="170" fill="#F0F4E8"/>
+        <rect x="8" y="8" width="184" height="154" fill="none" stroke="#639922" stroke-width="2" rx="3"/>
+        <path d="M38,170 L38,102 L68,90 L100,96 L132,90 L162,102 L162,170Z" fill="#1a3a1a"/>
+        <rect x="88" y="96" width="24" height="42" fill="#f0f0f0"/>
+        <polygon points="100,101 95,112 100,143 105,112" fill="#8B1A1A"/>
+        <polygon points="68,90 90,96 85,117 58,106" fill="#2a5a2a"/>
+        <polygon points="132,90 110,96 115,117 142,106" fill="#2a5a2a"/>
+        <rect x="87" y="79" width="26" height="20" fill="#D4A574" rx="2"/>
+        <ellipse cx="100" cy="61" rx="29" ry="31" fill="#D4A574"/>
+        <ellipse cx="100" cy="33" rx="29" ry="13" fill="#1a1a1a"/>
+        <rect x="71" y="33" width="58" height="12" fill="#1a1a1a"/>
+        <ellipse cx="71" cy="63" rx="5.5" ry="7.5" fill="#C4956B"/>
+        <ellipse cx="129" cy="63" rx="5.5" ry="7.5" fill="#C4956B"/>
+        <ellipse cx="87" cy="61" rx="5.5" ry="4" fill="#fff"/>
+        <ellipse cx="113" cy="61" rx="5.5" ry="4" fill="#fff"/>
+        <circle cx="88" cy="61" r="2.8" fill="#1a0a00"/>
+        <circle cx="114" cy="61" r="2.8" fill="#1a0a00"/>
+        <path d="M81,54 Q87,51 93,54" fill="none" stroke="#333" stroke-width="1.5"/>
+        <path d="M107,54 Q113,51 119,54" fill="none" stroke="#333" stroke-width="1.5"/>
+        <path d="M87,74 Q94,78 100,75 Q106,78 113,74" fill="none" stroke="#333" stroke-width="2"/>
+        <path d="M92,79 Q100,84 108,79" fill="none" stroke="#8B5E3C" stroke-width="1.5"/>
+        <text x="100" y="167" text-anchor="middle" font-size="11" fill="#1a3a1a" font-family="serif" font-weight="bold">孫中山（1866–1925）</text>
+      </svg>
+      <div class="icap">🌟 孫中山</div>
+    </div>
+    <!-- Calendar: October 1st -->
+    <div class="icard">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <!-- soft background -->
+        <rect width="200" height="170" fill="#FFF5F5"/>
+
+        <!-- calendar drop shadow -->
+        <rect x="27" y="22" width="150" height="134" rx="12" fill="#ccc" opacity=".35"/>
+
+        <!-- calendar body -->
+        <rect x="22" y="18" width="156" height="134" rx="12" fill="#fff" stroke="#ddd" stroke-width="1.5"/>
+
+        <!-- red header band -->
+        <rect x="22" y="18" width="156" height="44" rx="12" fill="#CC0000"/>
+        <rect x="22" y="44" width="156" height="18" fill="#CC0000"/>
+
+        <!-- binding rings -->
+        <circle cx="68" cy="18" r="6" fill="none" stroke="#999" stroke-width="3"/>
+        <rect x="62" y="12" width="12" height="6" fill="#fff"/>
+        <circle cx="100" cy="18" r="6" fill="none" stroke="#999" stroke-width="3"/>
+        <rect x="94" y="12" width="12" height="6" fill="#fff"/>
+        <circle cx="132" cy="18" r="6" fill="none" stroke="#999" stroke-width="3"/>
+        <rect x="126" y="12" width="12" height="6" fill="#fff"/>
+
+        <!-- month label: 十月 -->
+        <text x="100" y="52" text-anchor="middle" font-size="17" font-weight="700" fill="#fff" font-family="'Noto Serif TC', serif" letter-spacing="4">十 月</text>
+
+        <!-- weekday row background -->
+        <rect x="22" y="62" width="156" height="20" fill="#FFEEEE"/>
+        <!-- weekday labels -->
+        <text x="38"  y="76" text-anchor="middle" font-size="9" fill="#CC0000" font-family="sans-serif" font-weight="700">日</text>
+        <text x="60"  y="76" text-anchor="middle" font-size="9" fill="#555"    font-family="sans-serif">一</text>
+        <text x="82"  y="76" text-anchor="middle" font-size="9" fill="#555"    font-family="sans-serif">二</text>
+        <text x="104" y="76" text-anchor="middle" font-size="9" fill="#555"    font-family="sans-serif">三</text>
+        <text x="126" y="76" text-anchor="middle" font-size="9" fill="#555"    font-family="sans-serif">四</text>
+        <text x="148" y="76" text-anchor="middle" font-size="9" fill="#555"    font-family="sans-serif">五</text>
+        <text x="170" y="76" text-anchor="middle" font-size="9" fill="#CC0000" font-family="sans-serif" font-weight="700">六</text>
+
+        <!-- divider -->
+        <line x1="26" y1="82" x2="174" y2="82" stroke="#eee" stroke-width="1"/>
+
+        <!-- calendar grid: October 1949
+             Oct 1 = Saturday → col 6 (x=170)
+             Row 1: 1
+             Row 2: 2 3 4 5 6 7 8
+             Row 3: 9 10 11 12 13 14 15
+             Row 4: 16 17 18 19 20 21 22
+             Row 5: 23 24 25 26 27 28 29
+             Row 6: 30 31 -->
+
+        <!-- row 1 -->
+        <text x="170" y="97" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">1</text>
+
+        <!-- row 2 -->
+        <text x="38"  y="113" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">2</text>
+        <text x="60"  y="113" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">3</text>
+        <text x="82"  y="113" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">4</text>
+        <text x="104" y="113" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">5</text>
+        <text x="126" y="113" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">6</text>
+        <text x="148" y="113" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">7</text>
+        <text x="170" y="113" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">8</text>
+
+        <!-- row 3 -->
+        <text x="38"  y="129" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">9</text>
+        <text x="60"  y="129" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">10</text>
+        <text x="82"  y="129" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">11</text>
+        <text x="104" y="129" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">12</text>
+        <text x="126" y="129" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">13</text>
+        <text x="148" y="129" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">14</text>
+        <text x="170" y="129" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">15</text>
+
+        <!-- row 4 -->
+        <text x="38"  y="145" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">16</text>
+        <text x="60"  y="145" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">17</text>
+        <text x="82"  y="145" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">18</text>
+        <text x="104" y="145" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">19</text>
+        <text x="126" y="145" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">20</text>
+        <text x="148" y="145" text-anchor="middle" font-size="10" fill="#444" font-family="sans-serif">21</text>
+        <text x="170" y="145" text-anchor="middle" font-size="10" fill="#CC0000" font-family="sans-serif">22</text>
+
+        <!-- "1" spotlight circle highlight -->
+        <circle cx="170" cy="93" r="11" fill="#CC0000" opacity=".12"/>
+        <circle cx="170" cy="93" r="11" fill="none" stroke="#CC0000" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+        <!-- big bold "1" overlay -->
+        <text x="170" y="98" text-anchor="middle" font-size="13" font-weight="900" fill="#CC0000" font-family="'Noto Serif TC', serif">1</text>
+
+        <!-- star burst behind -->
+        <g transform="translate(170,93)" opacity=".18">
+          <line x1="0" y1="-14" x2="0" y2="14" stroke="#FFD700" stroke-width="2"/>
+          <line x1="-14" y1="0" x2="14" y2="0" stroke="#FFD700" stroke-width="2"/>
+          <line x1="-10" y1="-10" x2="10" y2="10" stroke="#FFD700" stroke-width="2"/>
+          <line x1="10" y1="-10" x2="-10" y2="10" stroke="#FFD700" stroke-width="2"/>
+        </g>
+
+        <!-- year badge at bottom -->
+        <rect x="60" y="154" width="80" height="14" rx="7" fill="#CC0000"/>
+        <text x="100" y="165" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700" letter-spacing="1">1949 年</text>
+      </svg>
+      <div class="icap">🗓️ 1949年10月1日 開國大典</div>
+    </div>
+    <!-- China flag -->
+    <div class="icard">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="170" fill="#f0f0f0"/>
+        <rect x="22" y="32" width="162" height="106" fill="#CC0000"/>
+        <!-- large star -->
+        <polygon points="57,52 60.5,63 72,63 62,70 65.5,81 57,74.5 48.5,81 52,70 42,63 53.5,63" fill="#FFD700"/>
+        <!-- 4 small stars -->
+        <polygon points="90,42 92,48 98,48 93,52 95,58 90,54 85,58 87,52 82,48 88,48" fill="#FFD700"/>
+        <polygon points="103,56 105,62 111,62 106,66 108,72 103,68 98,72 100,66 95,62 101,62" fill="#FFD700"/>
+        <polygon points="108,74 110,80 116,80 111,84 113,90 108,86 103,90 105,84 100,80 106,80" fill="#FFD700"/>
+        <polygon points="99,92 101,98 107,98 102,102 104,108 99,104 94,108 96,102 91,98 97,98" fill="#FFD700"/>
+        <rect x="17" y="25" width="6" height="124" fill="#999"/>
+        <circle cx="20" cy="25" r="7" fill="#bbb"/>
+        <text x="103" y="154" text-anchor="middle" font-size="11" fill="#CC0000" font-family="sans-serif" font-weight="bold">中華人民共和國國旗</text>
+        <text x="103" y="167" text-anchor="middle" font-size="9" fill="#888" font-family="sans-serif">紅色底 · 一大四小五顆星</text>
+      </svg>
+      <div class="icap">🚩 中華人民共和國國旗</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="sl">重要人物</div>
+    <div class="chips">
+      <div class="chip"><span class="dot" style="background:var(--green)"></span>孫中山</div>
+      <div class="chip"><span class="dot" style="background:var(--coral)"></span>毛澤東</div>
+    </div>
+    <div class="sl">清朝滅亡 (1912年)</div>
+    <ul class="facts">
+      <li class="fi"><span class="fn" style="background:var(--gl);color:var(--gd);border-color:var(--green)">1</span>清末，少年孫中山看見清政府不斷戰敗，百姓生活困苦</li>
+      <li class="fi"><span class="fn" style="background:var(--gl);color:var(--gd);border-color:var(--green)">2</span>孫中山成年後，為了救國救民，決定組織革命活動</li>
+      <li class="fi"><span class="fn" style="background:var(--gl);color:var(--gd);border-color:var(--green)">3</span>雖然革命活動多次失敗，但革命軍沒有放棄，終於取得成功</li>
+      <li class="fi"><span class="fn" style="background:var(--gl);color:var(--gd);border-color:var(--green)">4</span>1912年，清朝正式滅亡，結束了皇帝統治的時代</li>
+    </ul>
+    <div class="sl">中華人民共和國成立 (1949年)</div>
+    <div class="igrid">
+      <div class="icell" style="background:var(--gl);border-color:var(--green);color:var(--gd)"><strong>🗓️ 宣告成立日期</strong>1949年10月1日</div>
+      <div class="icell" style="background:var(--gl);border-color:var(--green);color:var(--gd)"><strong>📍 開國大典地點</strong>北京天安門</div>
+      <div class="icell" style="background:var(--gl);border-color:var(--green);color:var(--gd)"><strong>🎤 宣告成立的人</strong>毛澤東</div>
+      <div class="icell" style="background:var(--gl);border-color:var(--green);color:var(--gd)"><strong>🚩 國旗特點</strong>紅色底，一大四小共五顆星</div>
+    </div>
+  </div>
+  <div class="nav"><button class="nb" onclick="show(3)">← 秦朝</button><span class="pgind">5 / 5</span><button class="nb p" onclick="show(0)">重新開始 ↺</button></div>
+</div></div>
+
+</div><!-- /wrap -->
+<footer>單元一 · 中國的歷史 · 小學常識科教學資源 · 所有插圖為原創 SVG</footer>
+<script>
+function toggleHint(btn){
+  btn.classList.toggle('open');
+  const content=btn.nextElementSibling;
+  content.classList.toggle('open');
+}
+const colors=['#1D9E75','#7F77DD','#D85A30','#378ADD','#639922'];
+function show(i){
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('on'));
+  document.getElementById('c'+i).classList.add('on');
+  document.querySelectorAll('.tab').forEach((t,j)=>{t.className='tab t'+j+(j===i?' on':'');});
+  const f=document.getElementById('pf');
+  f.style.width=((i+1)/5*100)+'%';
+  f.style.background=colors[i];
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+show(0);
+</script>
+</body>
+</html>
